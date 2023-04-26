@@ -1,0 +1,115 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+  }
+  h1{
+    text-align: center;
+    margin-top: 20px;
+  }
+#main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 100px auto 0px auto;
+  
+}
+/* @keyframes animation{
+  from{position: relative; bottom: 10px;}
+  to {position: relative; top: 10px;}
+} */
+  .quiz-box{
+    background-color: #4a148c;
+    width: 100px;
+    height: 100px;
+    color:#f9fbe7;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px gray;
+    border: 1.5px solid #c6ff00;
+    transition: all;
+    transition-duration: 1s;
+  }
+  .quiz-box:hover{
+    transform: scale(105%);
+  }
+
+  #quiz-conntainer{
+    display: none;
+  }
+
+  #quiz-conntainer{
+    /* display: flex;
+    justify-content: center;
+    background-color: #c6ff00;
+    align-items: center; */
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-20%);
+  }
+
+  #buttons-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .answer-btn{
+    height: 35px;
+    margin: 5px 0px;
+    cursor: pointer;
+    background-color: #4a148c;
+    color: #f9fbe7;
+    /* border: 1.5px solid #c6ff00; */
+    border-radius: 20px;
+    border: none;
+    
+    
+  }
+  /* .answer-btn:hover{
+    background-color: #f9fbe7;
+    color:#4a148c;
+    border: 2px solid #c6ff00;
+  } */
+
+  #result-container{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+    border: 1px solid #4a148c;
+    padding: 20px;
+  }
+  #reload-quiz{
+    height: 35px;
+    width: 150px;
+    margin: 10px 0px;
+    background-color: #4a148c;
+    color: #f9fbe7;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .right{
+    background-color: #00695c;
+    color: #f9fbe7;
+  }
+
+  .wrong{
+    background-color: #d50000;
+    color: #f9fbe7;
+  }
